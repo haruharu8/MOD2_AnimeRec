@@ -1,3 +1,10 @@
 body {
   background-image: radial-gradient(circle, #7950f2 5%, #4dabf7 95%);
 }
+
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
