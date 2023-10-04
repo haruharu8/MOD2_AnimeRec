@@ -1,4 +1,4 @@
-import { useState, useContext, createContext } from 'react'
+import { useState, createContext } from 'react'
 
 import './App.css'
 import Opaque from './components/opaque/opaque'
@@ -14,6 +14,9 @@ function App() {
 
   // probably will take an array of objects
   const [animeData, setAnimeData] = useState ({})
+
+  // probably need something that handles clicks
+  
 
   return (
     <div className='app'>
