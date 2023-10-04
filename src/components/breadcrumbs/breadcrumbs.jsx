@@ -1,9 +1,12 @@
 import React from 'react'
 
-const breadcrumbs = () => {
+// this handles the 'breadcrumbs' bar on  the top
+
+
+const Breadcrumbs = () => {
   return (
     <div>breadcrumbs</div>
   )
 }
 
-export default breadcrumbs
+export default Breadcrumbs
