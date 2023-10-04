@@ -1,7 +1,4 @@
-const animeData = [
-
-{
-    "flowchart": [
+export const apiData = [
         {
             "head": 0,
             "type": "q",
@@ -2754,5 +2751,4 @@ const animeData = [
             ]
         }
     ]
-} 
-]
+
