@@ -1,6 +1,6 @@
 import React from 'react';
 
-//this handles the really nice cloud in the bottom
+// √√√ this handles the really nice cloud in the bottom
 
 const Opaque = () => {
   const svgStyle = {
