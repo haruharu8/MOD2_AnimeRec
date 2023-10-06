@@ -5,3 +5,8 @@
     padding: 10px;
 
 }
+
+h4 {
+    display: flex;
+    justify-content: center;
+}

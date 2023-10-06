@@ -22,18 +22,19 @@ const Questions = ({answerBreadcrumbs, setanswerBreadcrumbs}) => {
       }
 
       //grabs the data(tails) of the button object
+      // maybe if I '+'= it will add it the list or we can apped it to an array
       const handleClick = (answerObject) => {
         setanswerBreadcrumbs(answerObject.ans)
         console.log(answerObject) 
         console.log(answerObject.tail) 
-
+        setCurrentHead(answerObject.tail);
       }
 
         console.log(answerBreadcrumbs)
       /*  ***** when we click this button (any button), we should change the current head to be whatever this answer's tails is
       
       handleClick event {
-        let currentHead = clickedTails
+        let currentHead = answerObject.tail
       }
 
       some button onClick={handleClick} <-- this should change it to tails
