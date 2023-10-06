@@ -13,7 +13,7 @@ function App() {
   {/* setup context for children
       Probably should have state to set up changing
       anime titles or so */}
-  
+  const [answerBreadcrumbs, setanswerBreadcrumbs] = useState("")
 
   // probably will take an array of objects
   const [animeData, setAnimeData] = useState(apiData)
@@ -34,8 +34,8 @@ function App() {
       {/*give all kids context for them to use
         AnimeDataContext probably needs a state value?? */}
       <AnimeDataContext.Provider value={{animeData, setAnimeData,currentHead, setCurrentHead}} >
-        <Breadcrumbs />
-        <Questions />
+        <Breadcrumbs answerBreadcrumbs = {answerBreadcrumbs}setanswerBreadcrumbs = {setanswerBreadcrumbs} />
+        <Questions answerBreadcrumbs = {answerBreadcrumbs}setanswerBreadcrumbs = {setanswerBreadcrumbs}/>
         <Opaque />
       </AnimeDataContext.Provider>
     </div>
